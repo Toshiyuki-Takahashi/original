@@ -16,10 +16,9 @@
 
   <body>
     <%= render 'layouts/navbar' %>
-    
     <div class="container">
       <%= render 'layouts/flash_messages' %>
-      
+      <%= breadcrumbs %> <!-- これを追記 -->
       <%= yield %>
     </div>
   </body>
